@@ -10,3 +10,5 @@ insecure
 stylus
 twbs:bootstrap
 iron:router
+accounts-base
+accounts-password

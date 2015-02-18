@@ -1,0 +1,19 @@
+<template name="sideMenu">
+    <ul class="nav nav-pills nav-stacked">
+        <li class="{{activeRouteClass 'dashboard' 'dashboard'}}">
+            <a href="{{pathFor 'dashboard'}}">Dashboard</a>
+        </li>
+        <li class="{{activeRouteClass 'users' 'usersList'}}">
+            <a href="{{pathFor 'users'}}">Пользователи</a>
+        </li>
+        <li class="{{activeRouteClass 'groups' 'groupsList'}}">
+            <a href="{{pathFor 'groups'}}">Группы</a>
+        </li>
+        <li class="{{activeRouteClass 'operations' 'operationsList'}}">
+            <a href="{{pathFor 'operations'}}">Транзакции</a>
+        </li>
+        <li class="{{activeRouteClass 'settings' 'settings'}}">
+            <a href="{{pathFor 'settings'}}">Настройки</a>
+        </li>
+    </ul>
+</template>
