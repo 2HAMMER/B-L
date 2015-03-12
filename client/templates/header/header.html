@@ -1,0 +1,17 @@
+<template name="header">
+    <nav class="header">
+        <div class="header__left">
+            <button class="menu-button" id="showMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 44" class="menu-button__icon">
+                    <path d="M0 40v4h60v-4h-60zm0-20v4h60v-4h-60zm0-20v4h60v-4h-60z"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="header__center">
+            <p class="header-title">{{title}}</p>
+        </div>
+        <div class="header__right">
+            {{> Template.contentBlock }}
+        </div>
+    </nav>
+</template>

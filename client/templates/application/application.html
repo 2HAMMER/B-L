@@ -1,0 +1,14 @@
+<template name="application">
+
+    <div id="perspective" class="b-page perspective effect-moveleft modalview">
+        <div class="b-page__content">
+            <div class="b-page__wrapper">
+                {{> yield}}
+            </div>
+        </div>
+        <div class="b-page__side-nav outer-nav left vertical">
+            {{> sideMenu}}
+        </div>
+    </div>
+
+</template>

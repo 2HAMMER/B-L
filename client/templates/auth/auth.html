@@ -1,0 +1,21 @@
+<template name="auth">
+    <div class="auth-page">
+        <div class="auth-page__line">
+            <div class="auth-page-header">
+                <h2 class="auth-page-header__logo">B&L</h2>
+                <h2 class="auth-page-header__description">Приложение для займов</h2>
+            </div>
+        </div>
+        <div class="auth-page__line">
+            <div class="auth-page-login">
+                <h3 class="auth-page-login__title">Войти через</h3>
+                <div class="social-buttons">
+                    <button class="social-buttons__button social-buttons__button_vk"></button>
+                    <button class="social-buttons__button social-buttons__button_fb"></button>
+                    <button class="social-buttons__button social-buttons__button_gl"></button>
+                </div>
+            </div>
+        </div>
+        {{> loginButtons}}
+    </div>
+</template>

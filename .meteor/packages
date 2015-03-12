@@ -5,10 +5,11 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
 insecure
 stylus
-twbs:bootstrap
 iron:router
 accounts-base
-accounts-password
+accounts-facebook
+mrt:accounts-vk
+service-configuration
+accounts-ui

@@ -1,0 +1,93 @@
+.b-page {
+    background #aaa
+    position relative
+    width 100%
+    height 100%
+    perspective 1500px
+    background url("img/menu_bg.jpg") no-repeat
+    background-size cover
+
+    &__content {
+        position absolute
+        background #fff
+        width 100%
+        height 100%
+        min-height 100%
+        z-index 10
+        overflow hidden
+        cursor pointer
+        backface-visibility hidden
+        transform translateZ(0) translateX(0) rotateY(0deg)
+        transform-origin 50% 50%
+        transition transform 0.4s
+    }
+
+    &__wrapper {
+        position relative
+    }
+
+    &__side-nav {
+        position absolute
+        height auto
+        top 50%
+        left 11%
+        transform translateY(-50%)
+        transform-style preserve-3d
+    }
+
+    &_show-menu &__content{
+        transform translateX(50%) rotateY(-45deg) translateZ(-50px)
+    }
+
+    &_show-menu &__side-nav{
+
+    }
+}
+
+/* Outer Nav */
+.outer-nav .side-nav__link {
+    display block
+    white-space nowrap
+    font-weight 300
+    margin 0 0 30px 0
+    color #fff
+    opacity 0
+    text-decoration none
+    transform translateX(100px) translateZ(-1000px)
+    transition transform 0.4s, opacity 0.4s
+    transform-style preserve-3d
+}
+
+.outer-nav .side-nav__link:hover {
+    color #333
+}
+
+/* Effect Move Left */
+.b-page_show-menu .outer-nav a {
+    opacity 1
+    transform translateX(0) translateZ(0)
+}
+
+.b-page_show-menu .outer-nav a:nth-child(2) {
+    transition-delay 0.04s
+}
+
+.b-page_show-menu .outer-nav a:nth-child(3) {
+    transition-delay 0.08s
+}
+
+.b-page_show-menu .outer-nav a:nth-child(4) {
+    transition-delay 0.12s
+}
+
+.b-page_show-menu .outer-nav a:nth-child(5) {
+    transition-delay 0.16s
+}
+
+.b-page_show-menu .outer-nav a:nth-child(6) {
+    transition-delay 0.2s
+}
+
+.b-page_show-menu .outer-nav a:nth-child(7) {
+    transition-delay 0.24s
+}
